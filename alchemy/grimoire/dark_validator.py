@@ -1,8 +1,9 @@
-from .dark_spellbook import dark_spellbook
+from .dark_spellbook import dark_spell_allowed_ingredients
 
 def validate_ingredients(ingredients: str) -> str:
-    allowed:list[str, str, str, str] = dark_spellbook.light_spell_allowed_ingredients()
+    allowed: list[str, str, str, str] = dark_spellbook.dark_spell_allowed_ingredients()
 
     for allowed_ing in allowed:
         if allowed_ing in ingredients:
-            return("Earth, wind and fire - VALID")
+            return("Bats, Frogs and Arsenic - VALID")
+    return ("Error: Element not found!")
