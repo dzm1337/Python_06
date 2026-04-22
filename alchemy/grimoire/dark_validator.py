@@ -6,5 +6,5 @@ def validate_ingredients(ingredients: str) -> str:
 
     for allowed_ing in allowed:
         if allowed_ing in ingredients:
-            return ("Bats, Frogs and Arsenic - VALID")
-    return ("Error: Element not found!")
+            return "Bats, Frogs and Arsenic - VALID"
+    return "These ingredients shall not pass - INVALID"
